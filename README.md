@@ -59,7 +59,7 @@ Full documentation: [docs/BAR-Spec.md](./docs/BAR-Spec.md)
 }
 ```
 
-## Genesis Inscription (Already Ready)
+## Genesis Inscription 
 
 ```json
 {
@@ -72,31 +72,6 @@ Full documentation: [docs/BAR-Spec.md](./docs/BAR-Spec.md)
   "timestamp": 1745092800
 }
 ```
-
-**Status:** Inscribe this to the canonical registry address to officially launch BAR.
-
-## How to Participate
-
-### 1. Register an App
-1. Use Unisat, Xverse, or Sparrow Wallet (Ordinals support).
-2. Create a Taproot address (your publishing key).
-3. Inscribe a `register` operation.
-
-### 2. Update Metadata
-Inscribe an `update` operation from the current `owner` address.
-
-### 3. Transfer Ownership
-Inscribe a `transfer` operation with the new owner address.
-
-### 4. Run an Indexer
-Anyone can build a lightweight BAR indexer. Validation rules are simple and deterministic (see [docs/validation.md](./docs/validation.md)).
-
-## Integration
-
-- **BBOX** (bbox.lol) – Planned native pull from this L1 registry
-- **Zapstore** – Can index via Ordinals APIs
-- Custom frontends – Use public Ordinals explorers filtered by `p: "brc-app"` and the registry address
-
 ## Roadmap
 
 - **v1 (Current)** – Pure Ordinals, append-only registry
